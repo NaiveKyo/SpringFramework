@@ -3,11 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans 
        http://www.springframework.org/schema/beans/spring-beans.xsd">
-
-    <import resource="spring-beans.xml" />
-    <import resource="spring-lookup.xml" />
-    <import resource="spring-replace.xml" />
-    <!--<import resource="spring-customtag.xml" />-->
-    <import resource="spring-factorybean.xml" />
+    
+    <bean id="car" class="io.github.naivekyo.factory_bean.CarFactoryBean">
+        <property name="carInfo" value="跑车,400,200000" />
+    </bean>
     
 </beans>
